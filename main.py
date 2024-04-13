@@ -6,7 +6,7 @@ from keynote import generate_keynotes
 from video_to_text import video_to_text
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # Set a secret key for session management
+app.secret_key = 'meetshort'  # Set a secret key for session management
 
 ALLOWED_EXTENSIONS = {'wav'}  # Only allow WAV files
 
@@ -118,4 +118,4 @@ def generate_video_transcript():
 
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=80)
+  app.run(host='0.0.0.0', port=3000)
